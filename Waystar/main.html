@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="main.html" class="logo">Waystar</a>
+        <nav class="navbar">
+            <a href="index1.html">Cadastro de produtos</a>
+            <a href="index.html">Login/cadastro</a>
+            <a href="">Coming soon...</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box box-1" style="--img: url(miumiu2.jpg);" data-text="Miumiu"></div>
+        <div class="box box-2" style="--img: url(maisonmargiela.jpg);" data-text="Maison margiela"></div>
+        <div class="box box-3" style="--img: url(balenciaga.jpg);" data-text="balenciaga" ></div>
+        <div class="box box-4" style="--img: url(diesel.jpg);" data-text="diesel"></div>
+        <div class="box box-5" style="--img: url(yproject.jpg);" data-text="Y/project"></div>
+    </div>
+    <script>
+        document.querySelector(".box-3").addEventListener("click", function() {
+            window.location.href = "balenciaga.html";
+        });
+        document.querySelector(".box-1").addEventListener("click", function() {
+            window.location.href = "miumiu.html";
+        });
+        document.querySelector(".box-2").addEventListener("click", function() {
+            window.location.href = "maisonmargiela.html";
+        });
+        document.querySelector(".box-4").addEventListener("click", function() {
+            window.location.href = "diesel.html";
+        });
+        document.querySelector(".box-5").addEventListener("click", function() {
+            window.location.href = "yproject.html";
+        });
+    </script>
+    
+</body>
+</html>
